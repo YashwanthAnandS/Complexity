@@ -1,0 +1,15 @@
+1.Time Complexity (Time to execute the program)
+    - Operations
+    - Comparisons
+    - Loop Stuff
+    - Pointer references
+    - Function calls
+
+2.Space Complexity (Space Occupied by the program)
+    - Variables
+    - Data Structures
+    - Allocations
+    - Function call
+
+
+    Time Complexity inversely proportional to the Space Complexity

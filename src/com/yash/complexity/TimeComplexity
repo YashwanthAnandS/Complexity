@@ -1,0 +1,58 @@
+1.Loop
+
+  for(int i=1;i<=n;i++){  //O(n)
+        x=y+z;            //O(1)
+  }
+
+  Answer : O(n)
+
+2.Nested Loop
+
+   for(int i=1;i<=n;i++){     //O(n)
+      for(int j=1;j<=n;j++){  //O(n)
+            x=y+z;            //O(1)
+      }
+   }
+   Solution : O(n)*(O(n) +O(1))=O(n)*O(n)
+   Answer   : O(n^2)
+
+3.Sequential Statements
+
+  *)a=a+b;                   //O(1)
+
+  *)for(int i=1;i<=n;i++){   //O(n)
+        x=y+z;               //O(1)
+   }
+
+  *)for(int j=1;j<=n;j++){   //O(n)
+            c=d+e;           //O(1)
+       }
+  Solution : O(1) + O(n)*O(1) + O(n)*O(1)=1+1*O(n)+1*O(n)=O(n)(1+1)
+  Answer : O(n)
+
+4.If-else statements
+
+  if(condition){
+  // Take for example we have for loop with O(n) complexity
+  }else{
+  // Take for example we have for loop with O(n^2) complexity
+  }
+
+  Answer : O(n^2)
+
+
+  Order of Time Complexity with Best to Worst Case
+
+  O(1)<O(log n)<O(n)<O(nlogn)<O(n^c)<O(n!)
+
+
+  	                            Time Complexity
+  Algorithm	        Best 	        Average         Worst
+  Selection Sort	O(n^2)	        O(n^2)	        O(n^2)
+  Bubble Sort	    O(n)	        O(n^2)	        O(n^2)
+  Insertion Sort	O(n)	        O(n^2)	        O(n^2)
+  Heap Sort 	    O(n log (n))	O(n log (n))	O(n log (n))
+  Quick Sort	    O(n log (n))	O(n log (n))	O(n^2)
+  Merge Sort	    O(n log (n))	O(n log (n))	O(n log (n))
+  Bucket Sort	    O(n + k)	    O(n + k)	    O(n^2)
+  Radix Sort	    O(nk)	        O(nk)	        O(nk)
